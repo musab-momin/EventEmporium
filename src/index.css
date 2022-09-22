@@ -1,0 +1,74 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    html-eventemporium
+Version:    1.0
+Created:  22/09/22
+Author Name:  zygote
+Primary use:  html template
+-------------------------------------------------------------------*/
+
+:root {
+  /* colors */
+  --primary-naviblue: #0B1F38;
+  --primary-gold: #BF9559;
+  --white: #ffffff;
+  --textcolor: #404b69;
+  --text-clr: #232323;
+
+  /* font-styles */
+
+  --ff-vibes: "Great Vibes", cursive;
+  --ff-roboto: "Roboto", sans-serif;
+
+  /* font-sizes */
+  --fs-800: 3.5rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1rem;
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: var(--white);
+  color: var(--text-clr);
+  font-family: var(--ff-roboto);
+}

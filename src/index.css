@@ -10,7 +10,8 @@ Primary use:  html template
 
 :root {
   /* colors */
-  --primary-naviblue: #0B1F38;
+  --primary-navyblue: #0B1F38;
+  --secondary-navyblue: #003b83;
   --primary-gold: #BF9559;
   --white: #ffffff;
   --textcolor: #404b69;
@@ -24,7 +25,7 @@ Primary use:  html template
   /* font-sizes */
   --fs-800: 3.5rem;
   --fs-700: 1.5rem;
-  --fs-600: 1rem;
+  --fs-600: 1.3rem;
   --fs-500: 1rem;
   --fs-400: 0.9375rem;
   --fs-300: 1rem;
@@ -67,8 +68,40 @@ li {
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+  color: var(--text-clr);
+}
+
 body {
   background: var(--white);
   color: var(--text-clr);
   font-family: var(--ff-roboto);
+  min-height: 400vh;
+}
+
+/* utility classes */
+
+.btn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-center{
+  display: grid;
+  place-items: center;
+}
+
+.small{
+  font-size: 10px;
+}
+
+
+.move-container{
+  position: fixed;
+  width: 100vw;
+  height: 90vh;
+  background: var(--primary-navyblue);
+  z-index: -1;
 }

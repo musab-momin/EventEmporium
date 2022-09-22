@@ -1,10 +1,18 @@
 import React from 'react'
 import './index.css';
+import MovingContainer from './components/MovingContainer';
+import HeaderSection from './components/HeaderSection';
 
 
 const App = () => {
+
+
   return (
-    <div>App</div>
+    <main>
+      <MovingContainer />
+      <HeaderSection />
+
+    </main>
   )
 }
 

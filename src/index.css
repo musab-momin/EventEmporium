@@ -21,6 +21,7 @@ Primary use:  html template
 
   --ff-vibes: "Great Vibes", cursive;
   --ff-roboto: "Roboto", sans-serif;
+  --ff-tail: "Yellowtail", cursive;
 
   /* font-sizes */
   --fs-900: 3rem;
@@ -98,6 +99,25 @@ body {
   font-size: 10px;
 }
 
+.primay-heading{
+  font-size: 2.5rem;
+  font-family: var(--ff-vibes);
+  color: var(--primary-gold);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+@media screen and (min-width: 700px) {
+  .primay-heading{
+    font-size: 68px;
+    padding-top: 1em;
+    padding-bottom: 0;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+}
 
 .move-container{
   position: fixed;
@@ -106,3 +126,7 @@ body {
   background: var(--primary-navyblue);
   z-index: -1;
 }
+
+.swiper-button-next, .swiper-button-prev { color: var(--primary-navyblue); }
+
+

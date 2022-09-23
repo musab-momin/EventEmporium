@@ -4,6 +4,7 @@ import MovingContainer from './components/MovingContainer';
 import HeaderSection from './components/HeaderSection';
 import AboutSection from './components/AboutSection';
 import ServiceSection from './components/ServiceSection';
+import SpecialServiceSection from './components/SpecialServiceSection';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <HeaderSection />
       <AboutSection />
       <ServiceSection />
+      <SpecialServiceSection />
     </main>
   )
 }

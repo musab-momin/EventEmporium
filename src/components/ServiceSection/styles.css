@@ -34,3 +34,7 @@
     margin: 1em auto;
     line-height: 1.5em;
 }
+
+.swiper-button-next, .swiper-button-prev { color: var(--primary-navyblue); }
+
+

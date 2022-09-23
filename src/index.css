@@ -79,7 +79,6 @@ body {
   background: var(--white);
   color: var(--text-clr);
   font-family: var(--ff-roboto);
-  min-height: 400vh;
 }
 
 /* utility classes */
@@ -97,6 +96,16 @@ body {
 
 .small{
   font-size: 10px;
+}
+.text-center{
+  text-align: center;
+}
+
+.mt-3{
+  margin-top: 20px;
+}
+.center{
+  margin: 1em auto;
 }
 
 .primay-heading{
@@ -126,7 +135,3 @@ body {
   background: var(--primary-navyblue);
   z-index: -1;
 }
-
-.swiper-button-next, .swiper-button-prev { color: var(--primary-navyblue); }
-
-

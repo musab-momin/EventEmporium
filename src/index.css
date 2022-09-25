@@ -127,11 +127,21 @@ body {
     padding-right: .5em;
   }
 }
+.text-center{
+  text-align: center;
+}
 
 .move-container{
   position: fixed;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background: var(--primary-navyblue);
   z-index: -1;
+}
+.common-sec{
+  height: 100vh;
+}
+.common-container{
+  width: 90%;
+  margin: 1em auto;
 }

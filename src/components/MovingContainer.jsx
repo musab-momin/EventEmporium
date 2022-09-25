@@ -5,7 +5,7 @@ const MovingContainer = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      setPosition(window.scrollY / 10);
+      setPosition(window.scrollY / 100);
     };
 
     window.addEventListener("scroll", onScroll);

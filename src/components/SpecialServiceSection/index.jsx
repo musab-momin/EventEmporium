@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import { Swiper,SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
 import { Navigation } from "swiper";
@@ -27,15 +27,13 @@ const SpecialServiceSection = () => {
         modules={[Navigation]}
         className="swiper-container"
       >
-        {
-            SpecialServiceData.map(event => (
-                <>
-                    <SwiperSlide className="spe-service-slide">
-                        <Event key={event.id} {...event} />
-                    </SwiperSlide>
-                </>
-            ))
-        }
+        {SpecialServiceData.map((event, indx) => (
+          <>
+            <SwiperSlide className="spe-service-slide" key={indx}>
+              <Event {...event} />
+            </SwiperSlide>
+          </>
+        ))}
       </Swiper>
       <img src={border} alt="#" className="mt-3 center" />
     </section>

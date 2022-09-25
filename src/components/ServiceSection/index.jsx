@@ -39,9 +39,9 @@ const ServiceSection = () => {
         className="swiper-container"
       >
         {
-            servercesData.map(item =>( 
+            servercesData.map((item, indx) =>( 
                 <>
-                    <SwiperSlide key={item.id} className='service-slide'>
+                    <SwiperSlide key={indx} className='service-slide'>
                         <ServiceSlide {...item} />
                     </SwiperSlide>
                 </> )

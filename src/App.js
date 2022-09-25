@@ -5,6 +5,7 @@ import HeaderSection from './components/HeaderSection';
 import AboutSection from './components/AboutSection';
 import ServiceSection from './components/ServiceSection';
 import SpecialServiceSection from './components/SpecialServiceSection';
+import ProcessSection from './components/ProcessSection';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <AboutSection />
       <ServiceSection />
       <SpecialServiceSection />
+      <ProcessSection />
     </main>
   )
 }

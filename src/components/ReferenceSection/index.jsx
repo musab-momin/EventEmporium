@@ -5,7 +5,7 @@ import './styles.css';
 
 const ReferenceSection = () => {
   return (
-    <section className='common-sec'>
+    <section className='common-sec' id='gallery'>
         <div className='common-container'>
             <h2 className='ref-title text-center'>
                 <span>Checkout Our</span><br />

@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const hideNavbar = () => {
     setIsVisible(false);
-  }
+  };
 
   return (
     <>
@@ -19,20 +19,49 @@ const Navbar = () => {
         <img src={Burger} alt="#" />
       </button>
 
-      <div className={`navbar ${ isVisible ? 'show' : '' }`}>
+      <div className={`navbar ${isVisible ? "show" : ""}`}>
         <div className="cross">
           <button type="button" className="btn" onClick={hideNavbar}>
             <img src={Cross} alt="#" />
           </button>
         </div>
         <ul className="pages-container">
-                <li className="single-page"><a href="#home" className="page-link">Home</a></li>
-                <li className="single-page"><a href="#home" className="page-link">About</a></li>
-                <li className="single-page"><a href="#home" className="page-link">Services</a></li>
-                <li className="single-page"><a href="#home" className="page-link">Gallery</a></li>
-                <li className="single-page"><a href="#home" className="page-link">Contact</a></li>
-                <li className="single-page link-special"><a href="#home" className="small-link">Get A Quote</a></li>
-            </ul>
+          <li className="single-page">
+            <a href="#home" className="page-link" onClick={hideNavbar}>
+              Home
+            </a>
+          </li>
+          <li className="single-page">
+            <a href="#about" className="page-link" onClick={hideNavbar}>
+              About
+            </a>
+          </li>
+          <li className="single-page">
+            <a href="#service" className="page-link" onClick={hideNavbar}>
+              Services
+            </a>
+          </li>
+          <li className="single-page">
+            <a href="#special-service" className="page-link" onClick={hideNavbar}>
+              Special Services
+            </a>
+          </li>
+          <li className="single-page">
+            <a href="#gallery" className="page-link" onClick={hideNavbar}>
+              Gallery
+            </a>
+          </li>
+          <li className="single-page">
+            <a href="#founder" className="page-link" onClick={hideNavbar}>
+              Founder
+            </a>
+          </li>
+          <li className="single-page link-special">
+            <a href="#quote" className="small-link" onClick={hideNavbar}>
+              Get A Quote
+            </a>
+          </li>
+        </ul>
       </div>
     </>
   );

@@ -5,7 +5,10 @@ const ServiceSlide = ({ name, description, imgWeb, imgNorm }) => {
     <>
       <img
         src={imgWeb}
-        srcSet={imgNorm}
+        srcSet={`${imgNorm}, ${imgWeb}`}
+        sizes="(max-width: 710px) 120px,
+        (max-width: 991px) 193px,
+        278px"  
         alt="#"
         className="service-image"
       />

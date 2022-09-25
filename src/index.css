@@ -139,9 +139,16 @@ body {
   z-index: -1;
 }
 .common-sec{
-  height: 100vh;
+  height: max-content;
+  /* border: 2px solid gold; */
+}
+@media screen and (min-width: 750px) {
+  .common-sec{
+    height: 100vh;
+  }
 }
 .common-container{
   width: 90%;
   margin: 1em auto;
+  /* border: 1px solid #fff; */
 }

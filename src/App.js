@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection';
 import ServiceSection from './components/ServiceSection';
 import SpecialServiceSection from './components/SpecialServiceSection';
 import ProcessSection from './components/ProcessSection';
+import ReferenceSection from './components/ReferenceSection';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <ServiceSection />
       <SpecialServiceSection />
       <ProcessSection />
+      <ReferenceSection />
     </main>
   )
 }

@@ -7,12 +7,18 @@ import './styles.css';
 
 const FounderSection = () => {
   return (
-    <section className='common-sec founder-sec grid-center'>
+    <section className='common-sec founder-sec grid-center' id='founder'>
       <div className='common-container golden-clr'>
             <div className='clr-container'></div>
             <div className='second-clr-container'></div>
             <div className='third-clr-container'></div>
-            <img className='clr-img' src={FounderWeb} srcSet={Founder} alt='#'/> 
+            <img className='clr-img' 
+            src={FounderWeb} 
+            srcSet={`${Founder}, ${FounderWeb}`}
+            sizes="(max-width: 710px) 120px,
+            (max-width: 991px) 193px,
+            278px" 
+            alt='#'/> 
             <div className='founder-content'>
               <div className='founder-title'>
                 <h1>Barisha Suryavnshi</h1>

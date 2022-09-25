@@ -40,6 +40,7 @@ Primary use:  html template
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
@@ -142,7 +143,6 @@ body {
 .common-sec{
   height: max-content;
   min-height: 100vh;
-  /* border: 1px solid gold; */
 }
 
 .common-container{

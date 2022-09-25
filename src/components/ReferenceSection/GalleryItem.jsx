@@ -5,7 +5,10 @@ const GalleryItem = ({ name, imgWeb, imgNorm }) => {
       <div className="gallery-item">
         <img
           src={imgWeb}
-          srcSet={imgNorm}
+          srcSet={`${imgNorm}, ${imgWeb}`}
+          sizes="(max-width: 710px) 120px,
+          (max-width: 991px) 193px,
+          278px"
           alt="#"
           className="gallery-img"
         />

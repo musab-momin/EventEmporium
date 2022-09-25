@@ -9,6 +9,7 @@ import ProcessSection from './components/ProcessSection';
 import ReferenceSection from './components/ReferenceSection';
 import FounderSection from './components/FounderSection';
 import FormSection from './components/FormSection';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
       <ReferenceSection />
       <FounderSection />
       <FormSection />
+      <Footer />
     </main>
   )
 }

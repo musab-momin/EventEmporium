@@ -7,10 +7,16 @@ import Dinning from '../../assets/images/others/dinning_hall.jpg'
 
 const AboutSection = () => {
   return (
-    <section className='about-sec'>
+    <section className='about-sec' id='about'>
         <div className='about-container'>
             <div className='about-image'>
-                <img src={DinningWeb} srcSet={Dinning} alt='#'/>
+                <img 
+                src={DinningWeb} 
+                srcSet={`${DinningWeb}, ${Dinning}`}
+                sizes="(max-width: 710px) 120px,
+                (max-width: 991px) 193px,
+                278px" 
+                alt='#'/>
             </div>
             <div className='about-content'>
                 <h2 className='about-heading'>

@@ -18,10 +18,9 @@ import { servercesData } from '../../misc/service.data';
 const ServiceSection = () => {
 
     const isMobile = useMediaQuery('(max-width: 750px)');
-    console.log(isMobile);
   
     return (
-    <section className='service-sec'>
+    <section className='service-sec' id='service'>
         <div className='service-container'>
             <h1 className='primay-heading'>Event Emporium Services</h1>
         </div>
@@ -30,7 +29,6 @@ const ServiceSection = () => {
         spaceBetween={100}
         slidesPerGroup={isMobile ? 1 : 3}
         loop={true}
-        loopFillGroupWithBlank={true}
         pagination={{
           clickable: true,
         }}
@@ -41,7 +39,7 @@ const ServiceSection = () => {
         {
             servercesData.map((item, indx) =>( 
                 <>
-                    <SwiperSlide key={indx} className='service-slide'>
+                    <SwiperSlide key={item.name} className='service-slide'>
                         <ServiceSlide {...item} />
                     </SwiperSlide>
                 </> )

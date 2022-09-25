@@ -8,8 +8,8 @@ import BacheloretteWeb from '../assets/images/webps/bachelorette-event-service.w
 import Bachelorette from '../assets/images/others/bachelorette-event-service.jpg';
 import ProposalsWeb from '../assets/images/webps/proposalas-event-service.webp';
 import Proposals from '../assets/images/others/proposalas-event-service.jpg';
-import HighTeaPartyWeb from '../assets/images/webps/highteaparty-event-service.webp';
-import HighTeaParty from '../assets/images/others/highteaparty-event-service.jpg';
+import HighTeaPartyWeb from '../assets/images/webps/HighteaParties-event-services.webp';
+import HighTeaParty from '../assets/images/others/HighteaParties-event-services.jpg';
 import AwardEventWeb from '../assets/images/webps/award-event-service.webp';
 import AwardEvent from '../assets/images/others/award-event-service.jpg';
 import HouseWarmingPartiesWeb from '../assets/images/webps/HouseWarmingParties-event-service.webp'

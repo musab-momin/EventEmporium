@@ -8,6 +8,7 @@ import SpecialServiceSection from './components/SpecialServiceSection';
 import ProcessSection from './components/ProcessSection';
 import ReferenceSection from './components/ReferenceSection';
 import FounderSection from './components/FounderSection';
+import FormSection from './components/FormSection';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
       <ProcessSection />
       <ReferenceSection />
       <FounderSection />
+      <FormSection />
     </main>
   )
 }

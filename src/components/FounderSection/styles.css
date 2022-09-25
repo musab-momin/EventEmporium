@@ -1,0 +1,134 @@
+.founder-sec{
+    background-image: url('../../assets/images/webps/founder_bg.webp');
+    height: 100vh;
+}
+
+.golden-clr{
+    position: relative;
+    width: 90%;
+    background: var(--primary-gold);
+    min-height: 80%;
+}
+
+.clr-container{
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: var(--primary-navyblue);
+}
+.second-clr-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: var(--white);   
+}
+
+.third-clr-container{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: var(--primary-gold);
+}
+.clr-img{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+.founder-content{
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.founder-title > h1{
+    font-family: var(--ff-vibes);
+    font-size: 38px;
+    text-align: center;
+}
+
+.founder-title > p{
+    font-size: 16px;
+    float: right;
+    margin-right: .5em;
+}
+.founder-para{
+    font-size: 12px;
+    margin-top: 1em;
+    padding: 0 .5em;
+}
+
+@media screen and (min-width: 750px) {
+    .golden-clr{
+        width: 80%;
+    }
+    .clr-container{
+        left: -5px;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 450px;
+        height: 450px;
+    }
+    
+    .second-clr-container{
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 440px;
+        height: 440px;
+    }
+    .third-clr-container{
+        left: 10px;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 420px;
+        height: 420px;
+    }
+    .clr-img{
+        left: 20px;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 400px;
+        height: 400px;
+    }
+    .founder-content{
+        width: 50%;
+        height: 90%;
+        left: 90%;
+        top: 0;
+        transform: translateX(-90%);
+    }
+    .founder-title > h1{
+        margin-top: .5em;
+        font-size: 58px;
+        color: var(--primary-navyblue);
+    }
+    .founder-title > p{
+        font-size: 24px;
+    }
+    .founder-para{
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+}

@@ -1,7 +1,8 @@
 import React from "react";
-import SendIcon from "../../assets/images/icons/send-icon.png";
+import BlinkAnimation from "./BlinkAnimation";
+import NormalBtn from "./NormalBtn";
 
-const CustomForm = ({ frmValues, onInputChange, handleSubmit, validations }) => {
+const CustomForm = ({ frmValues, onInputChange, handleSubmit, validations, loading }) => {
   const eventsOptions = [
     "Birthdays",
     "Bachelorette",
@@ -97,8 +98,7 @@ const CustomForm = ({ frmValues, onInputChange, handleSubmit, validations }) => 
         </div>
         <div className="frm-row right-align">
           <button type="submit" className="sub-btn">
-            <img src={SendIcon} alt="#" />
-            Send
+            { loading ? <BlinkAnimation /> : <NormalBtn /> }
           </button>
         </div>
       </form>

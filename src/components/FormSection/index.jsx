@@ -1,75 +1,101 @@
-import React, { useState, useCallback } from 'react';
-import CustomForm from './CustomForm';
-import FormDetails from './FormDetails';
-import './styles.css';
-
+import React, { useState, useCallback } from "react";
+import { sendEmail, validate } from "../../misc/helper";
+import Alert from "./Alert";
+import CustomForm from "./CustomForm";
+import FormDetails from "./FormDetails";
+import "./styles.css";
 
 const FormSection = () => {
-
   const [frmValues, setFrmValues] = useState({
-    name: '',
-    email: '',
-    contact: '',
-    type: 'Type of Event',
-    date: '',
-    requirements: ''
-  })
+    name: "",
+    email: "",
+    contact: "",
+    type: "Type of Event",
+    date: "",
+    requirements: "",
+  });
 
-  const [validations, setValidations] = useState({})
+  const [validations, setValidations] = useState({});
+  const [toast, setToast] = useState({ active: false, type: "", mssg: "" });
+  const [loading, setLoading] = useState(false);
 
-  const onInputChange = useCallback((eve) =>{
-    const {name, value} = eve.target;
-    setFrmValues(prev => {
-      return {...prev, [name]:value}
-    })
-  }, [])
+  const onInputChange = useCallback((eve) => {
+    const { name, value } = eve.target;
+    setFrmValues((prev) => {
+      return { ...prev, [name]: value };
+    });
+  }, []);
 
-  const validate = frmData =>{
-    const validations = {}
 
-    // eslint-disable-next-line no-useless-escape
-    const validMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    const validPhone = /^[0-9]*$/;
+  const resetAlert = useCallback(() => {
+    setToast({ active: false, type: "", mssg: "" });
+  }, []);
 
-    if(!frmData.name){
-      validations.name = "Error: This is mendatory field";
-    }
-    if(frmData.type === 'Type of Event'){
-      validations.type = "Error: This is mendatory field";
-    }
-    if(!frmData.date){
-      validations.date = "Error: This is mendatory field";
-    }
-
-    if(!frmData.email){
-      validations.email = "Error: This is mendatory field";
-    }else if(!validMail.test(frmData.email)){
-      validations.email = "Error: Email is not valid!";
-    }
-
-    if(!frmData.contact){
-      validations.contact = "Error: This is mendatory field";
-    }else if(frmData.contact.length !== 10 || !validPhone.test(frmData.contact)){
-      validations.contact = "Error: Phone number is not valid!";
-    }
-    return validations
-
-  }
-
-  const handleSubmit = useCallback((eve) => {
-    eve.preventDefault();
-    const errors = validate(frmValues)
-    setValidations(errors)
-  }, [frmValues])
+  const handleSubmit = useCallback(
+    (eve) => {
+      eve.preventDefault();
+      const errors = validate(frmValues);
+      setValidations(errors);
+      if (Object.keys(errors).length === 0) {
+        setLoading(true);
+        sendEmail(frmValues).then(
+          (result) => {
+            console.log(result.text);
+            setLoading(false);
+            setFrmValues({
+              name: "",
+              email: "",
+              contact: "",
+              type: "Type of Event",
+              date: "",
+              requirements: "",
+            });
+            setToast({
+              active: true,
+              type: "toast-success",
+              mssg: "Email has been sent!",
+            });
+          },
+          (error) => {
+            console.log(error.text);
+            setLoading(false);
+            setFrmValues({
+              name: "",
+              email: "",
+              contact: "",
+              type: "Type of Event",
+              date: "",
+              requirements: "",
+            });
+            setToast({
+              active: true,
+              type: "toast-error",
+              mssg: "Something went woring!",
+            });
+          }
+        );
+      }
+    },
+    [frmValues]
+  );
 
   return (
-    <section className='common-sec grid-center' id='quote'>
-      <div className='frm-container'>
+    <section className="common-sec grid-center" id="quote">
+      <div className="frm-container">
+        {toast.active && (
+          <Alert {...toast} resetAlert={resetAlert} setToast={setToast} />
+        )}
         <FormDetails />
-        <CustomForm frmValues={frmValues} onInputChange={onInputChange} handleSubmit={handleSubmit} validations={validations} />
+        <CustomForm
+          frmValues={frmValues}
+          onInputChange={onInputChange}
+          handleSubmit={handleSubmit}
+          validations={validations}
+          loading={loading}
+        />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FormSection
+export default FormSection;

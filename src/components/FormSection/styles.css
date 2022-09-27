@@ -131,19 +131,18 @@
     justify-content: center;
     align-items: center;
     gap: .5em;
-    transition: all .3s linear;
+    cursor: pointer;
 }
 
 .sub-btn img{
     width: 20px;
     height: 20px;
 }
+@keyframes blink {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }
 
-.sub-btn:hover{
-    cursor: pointer;
-    border: 2px solid var(--primary-navyblue);
-    background: var(--white);
-}
 
 @media screen and (min-width: 750px) {
     .frm-container{

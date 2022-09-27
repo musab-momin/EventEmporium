@@ -11,7 +11,7 @@ const FormDetails = () => {
     <h3 className='frm-detail-title'>Quick Contact</h3>
     <div className='frm-detail'>
       <p className='frm-detail-para'><img src={EmailIcon} alt='#' /> Email:</p>
-      <p>dummay@gmail.com</p>
+      <p>barisha@eventemporium.in</p>
     </div>
     <div className='frm-detail'>
       <p className='frm-detail-para'><img src={PhoneIcon} alt='#' /> Phone:</p>

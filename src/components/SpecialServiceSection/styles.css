@@ -60,6 +60,7 @@
     padding: 0 1em;
     text-align: center;
     color: var(--primary-gold);
+    font-family: var(--ff-teko);
 }
 .slide-para{
     width: 90%;

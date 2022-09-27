@@ -12,26 +12,27 @@ const SpecialServiceSection = () => {
   return (
     <section className="spe-service-sec" id="special-service">
       <div className="service-container">
-        <h1 className="primay-heading text-center">Our Special Services</h1>
+        <h1 className="primay-heading text-center"  data-aos="fade-down">Our Special Services</h1>
       </div>
       <Swiper
         slidesPerView={1}
-        spaceBetween={100}
         slidesPerGroup={1}
         navigation={true}
-        loop={true}
+        loop={false}
         modules={[Navigation]}
         className="swiper-container"
+        data-aos="flip-down"
+        data-aos-easing="ease-out-cubic"
       >
         {SpecialServiceData.map((event, indx) => (
           <>
-            <SwiperSlide key={event.name} className="spe-service-slide">
+            <SwiperSlide key={indx} className="spe-service-slide">
               <Event {...event} />
             </SwiperSlide>
           </>
         ))}
       </Swiper>
-      <img src={border} alt="#" className="mt-3 center" />
+      <img src={border} alt="#" className="mt-3 center"/>
     </section>
   );
 };

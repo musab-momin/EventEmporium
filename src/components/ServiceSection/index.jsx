@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import ServiceSlide from './ServiceSlide';
-
 import './styles.css';
 
 // import required modules
@@ -22,25 +21,22 @@ const ServiceSection = () => {
     return (
     <section className='service-sec' id='service'>
         <div className='service-container'>
-            <h1 className='primay-heading'>Event Emporium Services</h1>
+            <h1 className='primay-heading' data-aos="zoom-in-right">Event Emporium Services</h1>
         </div>
         <Swiper
         slidesPerView={isMobile ? 1 : 3}
         spaceBetween={100}
         slidesPerGroup={isMobile ? 1 : 3}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
         navigation={true}
         modules={[Navigation]}
         className="swiper-container"
+        data-aos="fade-up"
       >
         {
             servercesData.map((item, indx) =>( 
                 <>
                     <SwiperSlide key={item.name} className='service-slide'>
-                        <ServiceSlide {...item} />
+                        <ServiceSlide {...item} key={item.name}/>
                     </SwiperSlide>
                 </> )
             )

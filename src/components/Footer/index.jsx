@@ -18,7 +18,7 @@ const Footer = () => {
       <div className='footer-part'>
         <h3 className='footer-title'>Quick Links</h3>
          <div className='footer-links'>
-          <a href='#home'>Home</a>
+            <a href='#home'>Home</a>
             <a href='#about'>About</a>
             <a href='#service'>Services</a>
             <a href='#special-service'>Special Services</a>
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
           <div className='footer-contact'>
             <img src={EmailIcon} alt='#' />
-            <p>dummary@gmail.com</p>
+            <p>barisha@eventemporium.in</p>
           </div>
         </div>
       </div>

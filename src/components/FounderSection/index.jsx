@@ -8,7 +8,7 @@ import './styles.css';
 const FounderSection = () => {
   return (
     <section className='common-sec founder-sec grid-center' id='founder'>
-      <div className='common-container golden-clr'>
+      <div className='common-container golden-clr' data-aos="fade-up">
             <div className='clr-container'></div>
             <div className='second-clr-container'></div>
             <div className='third-clr-container'></div>

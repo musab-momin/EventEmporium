@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './index.css';
 import MovingContainer from './components/MovingContainer';
 import HeaderSection from './components/HeaderSection';
@@ -10,10 +10,16 @@ import ReferenceSection from './components/ReferenceSection';
 import FounderSection from './components/FounderSection';
 import FormSection from './components/FormSection';
 import Footer from './components/Footer';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
 
+  useEffect(()=>{
+    Aos.init({
+      duration : 2000
+    })
+  }, [])
 
   return (
     <main>

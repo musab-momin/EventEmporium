@@ -2,7 +2,7 @@ import React from "react";
 
 const GalleryItem = ({ name, imgWeb, imgNorm }) => {
   return (
-      <div className="gallery-item">
+      <div className="gallery-item" data-aos="zoom-in" data-aos-duration="500">
         <img
           src={imgWeb}
           srcSet={`${imgNorm}, ${imgWeb}`}

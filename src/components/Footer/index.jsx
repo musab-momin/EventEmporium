@@ -2,7 +2,8 @@ import React from 'react'
 import './styles.css';
 import PhoneIcon from '../../assets/images/icons/phone-icon.png'
 import EmailIcon from '../../assets/images/icons/email-icon.png'
-
+import InstagramIcon from '../../assets/images/icons/instagram-icon.png'
+import FacebookIcon from '../../assets/images/icons/facebook-icon.png'
 
 const Footer = () => {
   return (
@@ -30,12 +31,20 @@ const Footer = () => {
         <h3 className='footer-title'>Contact</h3>
         <div>
           <div className='footer-contact'>
-            <img src={PhoneIcon} alt='#' />
+            <img src={PhoneIcon} alt='#' className='footer-contact-img' />
             <p>8898743746</p>
           </div>
           <div className='footer-contact'>
-            <img src={EmailIcon} alt='#' />
+            <img src={EmailIcon} alt='#' className='footer-contact-img' />
             <p>barisha@eventemporium.in</p>
+          </div>
+          <div className='footer-contact justify-center'>
+            <a href="https://www.instagram.com/eventemporium.09/" referrerPolicy='no-referrer' rel='external'>
+              <img src={InstagramIcon} alt='#' className='social-icon' />
+            </a>
+            <a href="#home" referrerPolicy='no-referrer' rel='external'>
+              <img src={FacebookIcon} alt='#' className='social-icon' />
+            </a>
           </div>
         </div>
       </div>

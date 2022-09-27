@@ -9,7 +9,7 @@
   height: 40px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .header{
     height: 95vh;
   }
@@ -43,7 +43,7 @@
   left: 0;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .navbar {
     width: 20%;
     left: -50%;
@@ -165,7 +165,7 @@
     width: 90%;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 900px) {
     .header-sec{
         position: relative;
         flex-direction: row;

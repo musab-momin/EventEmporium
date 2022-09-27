@@ -48,7 +48,7 @@
     font-family: var(--ff-vibes);
     color: var(--primary-gold);   
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
     .about-sec{
         height: 100vh;
     }

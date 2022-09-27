@@ -95,6 +95,15 @@
     border: 1px solid var(--primary-navyblue);
     border-radius: 2px;
 }
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: var(--primary-navyblue);
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+}
 
 .frm-dif-inp{
     width: 100%;
@@ -145,7 +154,7 @@
 .loader__dot:nth-child(3) { animation-delay: 500ms }
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 900px) {
     .frm-container{
         min-height: 85%;
         flex-direction: row;

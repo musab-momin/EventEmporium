@@ -46,7 +46,7 @@
     opacity: 1;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 900px) {
     .ref-title{
         font-size: 68px;
     }

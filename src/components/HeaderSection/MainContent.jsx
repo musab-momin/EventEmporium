@@ -20,8 +20,8 @@ const MainContent = () => {
             data-aos-duration="500"
           />
         </div>
-        <div className="moto-container">
-          <p className="moto" data-aos="fade-up">
+        <div className="moto-container"  data-aos="fade-up">
+          <p className="moto">
             <span>"</span>
             Bringing Dreamscapes To Reality
             <span>"</span>

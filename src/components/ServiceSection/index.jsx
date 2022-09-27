@@ -27,16 +27,17 @@ const ServiceSection = () => {
         slidesPerView={isMobile ? 1 : 3}
         spaceBetween={100}
         slidesPerGroup={isMobile ? 1 : 3}
+        loop={true}
         navigation={true}
         modules={[Navigation]}
         className="swiper-container"
         data-aos="fade-up"
       >
         {
-            servercesData.map((item, indx) =>( 
+            servercesData.map((item) =>( 
                 <>
                     <SwiperSlide key={item.name} className='service-slide'>
-                        <ServiceSlide {...item} key={item.name}/>
+                        <ServiceSlide {...item}/>
                     </SwiperSlide>
                 </> )
             )

@@ -18,10 +18,10 @@ const SpecialServiceSection = () => {
         slidesPerView={1}
         slidesPerGroup={1}
         navigation={true}
-        loop={false}
+        loop={true}
         modules={[Navigation]}
         className="swiper-container"
-        data-aos="flip-down"
+        data-aos="zoom-in-right"
         data-aos-easing="ease-out-cubic"
       >
         {SpecialServiceData.map((event, indx) => (

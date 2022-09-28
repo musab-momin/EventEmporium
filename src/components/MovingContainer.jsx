@@ -16,7 +16,7 @@ const MovingContainer = () => {
   }, [position]);
 
   return(
-    <div className="move-container" style={{ top: `${position}px` }}>MovingContainer</div>
+    <div className="move-container" style={{ top: `${position}px` }}></div>
   );
 };
 

@@ -21,7 +21,7 @@ const ServiceSection = () => {
     return (
     <section className='service-sec' id='service'>
         <div className='service-container'>
-            <h1 className='primay-heading' data-aos="zoom-in-right">Event Emporium Services</h1>
+            <h1 className='service-title' data-aos="zoom-in-right">Event Emporium Services</h1>
         </div>
         <Swiper
         slidesPerView={isMobile ? 1 : 3}

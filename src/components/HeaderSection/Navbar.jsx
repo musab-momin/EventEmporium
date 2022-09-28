@@ -58,7 +58,7 @@ const Navbar = () => {
           </li>
           <li className="single-page link-special">
             <a href="#quote" className="small-link" onClick={hideNavbar}>
-              Get A Quote
+              Connect with us
             </a>
           </li>
         </ul>

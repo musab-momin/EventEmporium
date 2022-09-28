@@ -7,7 +7,7 @@ const ProcessSection = () => {
   return (
     <section className='common-sec'>
         <div className='common-container'> 
-            <h1 className='process-title text-center'>Process</h1>
+            <h1 className='process-title text-center' data-aos="zoom-in-up">Process</h1>
             <div className='process-container'>
                 {
                     processItems.map((process, indx)=>(

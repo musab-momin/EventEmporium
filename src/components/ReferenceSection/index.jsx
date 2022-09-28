@@ -8,7 +8,6 @@ const ReferenceSection = () => {
     <section className='common-sec' id='gallery'>
         <div className='common-container'>
             <h2 className='ref-title text-center'>
-                <span>Checkout Our</span><br />
                 Reference
             </h2>
             <div className="process-container">

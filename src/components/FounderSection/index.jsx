@@ -20,14 +20,13 @@ const FounderSection = () => {
           alt="#"
         />
         <div className="founder-content">
-          <div className="founder-title">
-            <h1>Barisha Suryavnshi</h1>
-            <p>(Founder)</p>
+          <div className="founder-title-container mt-5">
+            <p className="founder-title"><span>Founder:</span><br /> Barisha Suryawanshi </p><br/>
           </div>
           <p className="founder-para">
             Our team understands that a properly executed event can be leveraged
             to support an organization's strategic vision incorporated into a
-            company marketing plan or used to build a network and client loyalty
+            company marketing plan or used to build a network and client loyalty.
             we bring a fresh, unique approach to the event management industry.
             Regardless of size scope, we treat your event like a business with
             clear strategic goals and comprehensive plane to ensure your event

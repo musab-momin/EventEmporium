@@ -25,7 +25,7 @@ const Footer = () => {
             <a href='#service'>Services</a>
             <a href='#special-service'>Special Services</a>
             <a href='#gellary'>Gellary</a>
-            <a href='#quote'>Quote</a>
+            <a href='#quote'>Connect with us</a>
          </div>
       </div>
       <div className='footer-part'>
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           <div className='footer-contact'>
             <img src={EmailIcon} alt='#' className='footer-contact-img' />
-            <p>barisha@eventemporium.in</p>
+            <p>info@eventemporium.in</p>
           </div>
           <div className='footer-contact justify-center'>
             <a href="https://www.instagram.com/eventemporium.09/" target="_blank" rel="noopener noreferrer external">

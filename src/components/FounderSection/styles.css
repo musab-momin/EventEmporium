@@ -6,8 +6,8 @@
 .golden-clr{
     position: relative;
     width: 90%;
+    min-height: 600px;
     background: var(--primary-gold);
-    min-height: 90%;
 }
 
 .clr-container{
@@ -52,26 +52,23 @@
 .founder-content{
     width: 100%;
     position: absolute;
-    top: 90%;
+    top: 95%;
     left: 50%;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -95%);
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-
-.founder-title > h1{
+.founder-title{
+    font-size: clamp(1.5rem, 1rem + 6vw, 6rem);
+    margin-left: .5em;
     font-family: var(--ff-vibes);
-    font-size: 38px;
-    text-align: center;
 }
-
-.founder-title > p{
-    font-size: 16px;
-    float: right;
-    margin-right: .5em;
+.founder-title > span{
+    font-size: clamp(16px, 30px, 40px);
+    margin: 0 .5em;
 }
 .founder-para{
     font-size: 13px;
@@ -84,6 +81,14 @@
 @media screen and (min-width: 900px) {
     .golden-clr{
         width: 80%;
+        min-height: 90%;
+    }
+    .founder-title{
+        font-size: clamp(1.5rem, 1rem + 3vw, 6rem);
+    }
+    
+    .founder-title > span{
+        font-size: clamp(16px, 36px, 40px);
     }
     .clr-container{
         left: -5px;

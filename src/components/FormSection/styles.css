@@ -2,7 +2,7 @@
     width: 90%;
     min-height: 100%;
     max-height: max-content;
-    margin: 1em auto;
+    margin: 2em auto;
     background: var(--white);
     border-radius: 5px;
     display: flex;
@@ -95,19 +95,25 @@
     border: 1px solid var(--primary-navyblue);
     border-radius: 2px;
 }
-input[type="date"]:before {
-    content: attr(placeholder) !important;
-    color: var(--primary-navyblue);
-    margin-right: 0.5em;
-  }
-  input[type="date"]:focus:before,
-  input[type="date"]:valid:before {
-    content: "";
-}
-
 .frm-dif-inp{
     width: 100%;
     background: var(--white);
+}
+
+.no-border{
+    border: none;
+}
+.date-inp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-navyblue);
+    border-radius: 2px;
+}
+.date-inp > img{
+    width: 15px;
+    height: 15px;
+    margin-right:5px;
 }
 
 .frm-area{

@@ -111,9 +111,23 @@ body {
   text-align: center;
 }
 
+.mt-1{
+  margin-top: 15px;
+}
+
 .mt-3{
   margin-top: 20px;
 }
+
+.mt-4{
+  margin-top: 30px;
+}
+
+.mt-5{
+  margin-top: 40px;
+}
+
+
 .center{
   margin: 1em auto;
 }
@@ -170,6 +184,7 @@ body {
   height: 60px;
   border-radius: 4px;
   color: var(--white);
+  z-index: 2;
 }
 @keyframes alertAnimator {
   0%{
@@ -183,9 +198,9 @@ body {
 }
 .toast-success{
   background: var(--success);
-  animation: alertAnimator 2s linear;
+  animation: alertAnimator 3s linear;
 }
 .toast-error{
   background: var(--error);
-  animation: alertAnimator 2s linear;
+  animation: alertAnimator 3s linear;
 }

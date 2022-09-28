@@ -147,6 +147,7 @@ body {
   height: 100vh;
   background: var(--primary-navyblue);
   z-index: -1;
+  opacity: 1;
 }
 .common-sec{
   height: max-content;

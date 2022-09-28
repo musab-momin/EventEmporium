@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import './styles.css';
 import PhoneIcon from '../../assets/images/icons/phone-icon.png'
@@ -39,8 +40,8 @@ const Footer = () => {
             <p>barisha@eventemporium.in</p>
           </div>
           <div className='footer-contact justify-center'>
-            <a href="https://www.instagram.com/eventemporium.09/" referrerPolicy='no-referrer' rel='external'>
-              <img src={InstagramIcon} alt='#' className='social-icon' />
+            <a href="https://www.instagram.com/eventemporium.09/" target="_blank" rel="noopener noreferrer external">
+              <img src={InstagramIcon} alt='#' className='social-icon'/>
             </a>
             <a href="#home" referrerPolicy='no-referrer' rel='external'>
               <img src={FacebookIcon} alt='#' className='social-icon' />

@@ -2,7 +2,7 @@
     width: 90%;
     min-height: 100%;
     max-height: max-content;
-    margin: .5em auto;
+    margin: 1em auto;
     background: var(--white);
     border-radius: 5px;
     display: flex;

@@ -80,7 +80,7 @@ const FormSection = () => {
   );
 
   return (
-    <section className="common-sec grid-center" id="quote">
+    <section className="common-sec" id="quote">
       <div className="frm-container">
         {toast.active && (
           <Alert {...toast} resetAlert={resetAlert} setToast={setToast} />

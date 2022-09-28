@@ -12,7 +12,7 @@ const SpecialServiceSection = () => {
   return (
     <section className="spe-service-sec" id="special-service">
       <div className="service-container">
-        <h1 className="primay-heading text-center"  data-aos="fade-down">Our Special Services</h1>
+        <h1 className="spe-service-title"  data-aos="fade-down">Our Special Services</h1>
       </div>
       <Swiper
         slidesPerView={1}
@@ -32,7 +32,9 @@ const SpecialServiceSection = () => {
           </>
         ))}
       </Swiper>
-      <img src={border} alt="#" className="mt-3 center"/>
+      <div className="border-img-container">
+        <img src={border} alt="#" className="mt-3 center"/>
+      </div>
     </section>
   );
 };

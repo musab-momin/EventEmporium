@@ -3,13 +3,26 @@
     background-image: url('../../assets/images/webps/services_bg.webp');
     background-size: cover;
     background-repeat: no-repeat;
+    border: 2px solid #fff;
 }
 
 .service-container{
     width: 90%;
-    margin: 0 auto;
-    /* border: 1px solid black; */
+    margin: 1em auto;
 }
+
+.service-title{
+    font-size: clamp(1rem, 1rem + 7vw, 7rem);
+    font-family: var(--ff-vibes);
+    color: var(--primary-gold);
+
+}
+@media screen and (min-width: 900px) {
+    .service-title{
+        font-size: clamp(1rem, 1rem + 4vw, 7rem);
+    }
+}
+
 .swiper-container{
     width: 90%;
     margin: 0 auto;

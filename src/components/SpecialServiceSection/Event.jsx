@@ -17,7 +17,7 @@ const Event = ({name, description, imgWeb, imgNorm}) => {
        { description }
       </p>
       <a href='#quote' className="slide-btn grid-center">
-        Get A Quote
+        Connect with us
       </a>
     </div>
     </>

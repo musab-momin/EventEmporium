@@ -32,7 +32,7 @@ const MainContent = () => {
             href="#quote"
             className="quote-btn"
           >
-            Get a Quote
+            Connect with us
           </a>
         </div>
       </div>

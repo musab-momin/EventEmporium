@@ -1,6 +1,7 @@
 import React from "react";
 import BlinkAnimation from "./BlinkAnimation";
 import NormalBtn from "./NormalBtn";
+import CalendarIcon from "../../assets/images/icons/calendar-icon.png";
 
 const CustomForm = ({ frmValues, onInputChange, handleSubmit, validations, loading }) => {
   const eventsOptions = [
@@ -75,15 +76,18 @@ const CustomForm = ({ frmValues, onInputChange, handleSubmit, validations, loadi
             { validations['type'] && <p className='frm-warning'>{validations.type}</p>}
           </div>
           <div className="frm-item frm-item-50">
+           <div className="date-inp">
             <input
-              className="frm-dif-inp"
-              type="date"
-              name="date"
-              placeholder="Date of Event"
-              value={frmValues.date}
-              onChange={onInputChange}
-            />
-            { validations['date'] && <p className='frm-warning'>{validations.date}</p>}
+                className="frm-dif-inp no-border"
+                type="text"
+                name="date"
+                placeholder="dd / mm / yy"
+                value={frmValues.date}
+                onChange={onInputChange}
+              />
+              <img src={CalendarIcon} alt='#' />
+           </div>
+          { validations['date'] && <p className='frm-warning'>{validations.date}</p>}
           </div>
         </div>
         <div className="frm-row">

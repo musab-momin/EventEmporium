@@ -34,7 +34,7 @@
 
 .event-title{
     text-align: center;
-    padding: 1em 0;
+    padding: .5em 0;
     font-size: var(--fs-800);
     font-family: var(--ff-tail);
 }
@@ -43,9 +43,10 @@
     height: 250px;
 }
 .event-para{
-    width: 50%;
+    width: 90%;
+    font-size: clamp(12px, 14px, 16px);
     text-align: center;
-    margin: 1em auto;
+    margin: 0 auto;
     line-height: 1.5em;
 }
 

@@ -40,6 +40,29 @@ export const validate = (frmData) => {
   }
   if (!frmData.date) {
     validations.date = "Error: This is mendatory field";
+  } else if (frmData.date) {
+    // user entered date
+    const date = frmData.date.toLocaleString();
+    let [year, month, day] = date.split("-").map(item => parseInt(item))
+
+
+    // current date
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const currentMonth = today.getMonth() + 1;
+    const currentDay = today.getDate();
+
+    if (year < currentYear) {
+      validations.date = "Error: This date is not valid";
+    } else if (year === currentYear) {
+      if (month < currentMonth) {
+        validations.date = "Error: This date is not valid";
+      }else if(month === currentMonth && day < currentDay){
+        validations.date = "Error: This date is not valid";
+      }
+    } else if (year > currentYear + 1) {
+      validations.date = `Error: Date above ${currentYear + 1} is not allowed`;
+    }
   }
 
   if (!frmData.email) {

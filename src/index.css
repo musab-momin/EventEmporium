@@ -4,7 +4,7 @@
 Project:    html-eventemporium
 Version:    1.0
 Created:  22/09/22
-Author Name:  zygote
+Author Name:  zygote info tech
 Primary use:  html template
 -------------------------------------------------------------------*/
 
@@ -171,7 +171,6 @@ body {
 .common-container{
   width: 90%;
   margin: 1em auto;
-  /* border: 1px solid #fff; */
 }
 
 

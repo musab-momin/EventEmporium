@@ -79,9 +79,8 @@ const CustomForm = ({ frmValues, onInputChange, handleSubmit, validations, loadi
            <div className="date-inp">
             <input
                 className="frm-dif-inp no-border"
-                type="text"
+                type="date"
                 name="date"
-                placeholder="dd / mm / yy"
                 value={frmValues.date}
                 onChange={onInputChange}
               />

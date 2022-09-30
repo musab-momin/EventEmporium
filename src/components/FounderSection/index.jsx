@@ -27,12 +27,12 @@ const FounderSection = () => {
             Our team understands that a properly executed event can be leveraged
             to support an organization's strategic vision incorporated into a
             company marketing plan or used to build a network and client loyalty.
-            we bring a fresh, unique approach to the event management industry.
+            We bring a fresh, unique approach to the event management industry.
             Regardless of size scope, we treat your event like a business with
             clear strategic goals and comprehensive plane to ensure your event
             is delivered on time and on a budget we at the event emporium learn
             about your business focus on your challenges and plane events to
-            support your goal
+            support your goal.
           </p>
         </div>
       </div>

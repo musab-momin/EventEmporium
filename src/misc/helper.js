@@ -43,11 +43,8 @@ export const validate = (frmData) => {
   } else if (frmData.date) {
     // user entered date
     const date = frmData.date.toLocaleString();
-    let [year, month, day] = date.split("-");
+    let [year, month, day] = date.split("-").map(item => parseInt(item))
 
-    year = parseInt(year)
-    month = parseInt(month)
-    day = parseInt(day);
 
     // current date
     const today = new Date();
@@ -63,8 +60,6 @@ export const validate = (frmData) => {
       }else if(month === currentMonth && day < currentDay){
         validations.date = "Error: This date is not valid";
       }
-
-
     } else if (year > currentYear + 1) {
       validations.date = `Error: Date above ${currentYear + 1} is not allowed`;
     }

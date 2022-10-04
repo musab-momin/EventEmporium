@@ -51,7 +51,7 @@ export const servercesData = [
     id: 104,
     name: "Bachelorette",
     description:
-      "Well! Well! Well! It is your last day of being single, so it definitely should be a blast with fun and games, and booze. We make sure that you make your last single night the most memorable.",
+      "Well! Well! Well! It is your last day of being single, so it definitely should be a blast with fun and games, and booze. We make sure that we make your last single night the most memorable.",
     imgWeb: BacheloretteWeb,
     imgNorm: Bachelorette,
   },
@@ -59,7 +59,7 @@ export const servercesData = [
     id: 105,
     name: "Proposals",
     description:
-      "He/She said YES! You definetly want your proposal to be filled with love, lights and joy. Be it in a restuarent or just in your car. We make your event the most memorable by planning the best ideas and delivering it to you.",
+      "He/She said YES! You definetly want your proposal to be filled with love, lights and joy. Be it in a restaurant or just in your car. We make your event the most memorable by planning the best ideas and delivering it to you.",
     imgWeb: ProposalsWeb,
     imgNorm: Proposals,
   },
@@ -67,7 +67,7 @@ export const servercesData = [
     id: 106,
     name: "High Tea Parties",
     description:
-      "You need a day where your spend time write your family, friends, and loved ones.Girls definitely enjoy their gossip and kitties over a nice high tea party. So, here we are giving you the best plans for your day to just sit and relax with your loved ones with a cup of tea.",
+      "You need a day where your spend time with your family, friends, and loved ones.Girls definitely enjoy their gossip and kitties over a nice high tea party. So, here we are giving you the best plans for your day to just sit and relax with your loved ones with a cup of tea.",
     imgWeb: HighTeaPartyWeb,
     imgNorm: HighTeaParty,
   },
@@ -95,7 +95,7 @@ export const servercesData = [
   },
   {
     id: 110,
-    name: "Lunch Event Parties",
+    name: "Launch Event Parties",
     description: "Setting up something new? You are probably having a tons of things on your plate. Although, the most important launch event should be unique and create a good marketing for you. We are here and everyting would be taken care of so no worries.",
     imgWeb: LunchEventPartiesWeb,
     imgNorm: LunchEventParties,

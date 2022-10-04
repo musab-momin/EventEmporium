@@ -18,17 +18,17 @@ const FormDetails = () => {
         <p className="frm-detail-para">
           <img src={PhoneIcon} alt="#" /> Phone:
         </p>
-        <p>8898743746</p>
+        <p>+91 9137974083</p>
       </div>
       <div className="frm-detail">
         <p className="frm-detail-para address">
-          We will get back to you within 24 hours, or call us everyday, 09:00 AM
-          - 05:00 PM
+          We will get back to you within 24 hours, 
+          Call us Monday - Saturday  09:00 AM - 05:00 PM
         </p>
       </div>
       <div className="frm-contact">
         <img src={TelePhoneIcon} alt="#" />
-        <p className="frm-contact-para">022-500-897</p>
+        <p className="frm-contact-para">+91 9137974083</p>
       </div>
     </div>
   );

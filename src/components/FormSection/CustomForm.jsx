@@ -25,7 +25,7 @@ const CustomForm = ({ frmValues, onInputChange, handleSubmit, validations, loadi
 
   return (
     <div className="frm-sec" data-aos="fade-up">
-      <h1 className="frm-title">Request A Quote</h1>
+      <h1 className="frm-title">Connect With Us</h1>
       <form className="frm" onSubmit={handleSubmit}>
         <div className="frm-row">
           <div className="frm-item">

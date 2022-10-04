@@ -4,7 +4,7 @@ import './styles.css';
 import PhoneIcon from '../../assets/images/icons/phone-icon.png'
 import EmailIcon from '../../assets/images/icons/email-icon.png'
 import InstagramIcon from '../../assets/images/icons/instagram-icon.png'
-import FacebookIcon from '../../assets/images/icons/facebook-icon.png'
+
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
             <a href='#about'>About</a>
             <a href='#service'>Services</a>
             <a href='#special-service'>Special Services</a>
-            <a href='#gellary'>Gellary</a>
+            <a href='#gellary'>Gallery</a>
             <a href='#quote'>Connect with us</a>
          </div>
       </div>
@@ -33,7 +33,7 @@ const Footer = () => {
         <div>
           <div className='footer-contact'>
             <img src={PhoneIcon} alt='#' className='footer-contact-img' />
-            <p>8898743746</p>
+            <p>9137974083</p>
           </div>
           <div className='footer-contact'>
             <img src={EmailIcon} alt='#' className='footer-contact-img' />
@@ -42,9 +42,6 @@ const Footer = () => {
           <div className='footer-contact justify-center'>
             <a href="https://www.instagram.com/eventemporium.09/" target="_blank" rel="noopener noreferrer external">
               <img src={InstagramIcon} alt='#' className='social-icon'/>
-            </a>
-            <a href="#home" referrerPolicy='no-referrer' rel='external'>
-              <img src={FacebookIcon} alt='#' className='social-icon' />
             </a>
           </div>
         </div>

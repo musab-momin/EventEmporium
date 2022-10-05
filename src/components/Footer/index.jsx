@@ -33,7 +33,7 @@ const Footer = () => {
         <div>
           <div className='footer-contact'>
             <img src={PhoneIcon} alt='#' className='footer-contact-img' />
-            <p>9137974083</p>
+            <p>+91 9137974979</p>
           </div>
           <div className='footer-contact'>
             <img src={EmailIcon} alt='#' className='footer-contact-img' />

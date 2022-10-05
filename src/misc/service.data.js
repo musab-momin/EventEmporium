@@ -102,7 +102,7 @@ export const servercesData = [
   },
   {
     id: 111,
-    name: "Tranditional Events",
+    name: "Traditional Events",
     description: "Festival remind us how important it is to keep our families together as all cousins gather together to have memorable time. Be it Ganesh Chatuthi, Diwali, Eid or Christmas. We are here to create most memorable event that you could think at any point.",
     imgWeb: TraditionalEventWeb,
     imgNorm: TraditionalEvent,

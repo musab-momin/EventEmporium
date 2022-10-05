@@ -31,7 +31,7 @@ const FounderSection = () => {
             Regardless of size scope, we treat your event like a business with
             clear strategic goals and comprehensive plane to ensure your event
             is delivered on time and on a budget. We at the Event Emporium learn
-            about your business focus on your challenges and plane events to
+            about your business, focus on your challenges and plan events to
             support your goal.
           </p>
         </div>

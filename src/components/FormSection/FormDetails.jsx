@@ -18,7 +18,7 @@ const FormDetails = () => {
         <p className="frm-detail-para">
           <img src={PhoneIcon} alt="#" /> Phone:
         </p>
-        <p>+91 9137974083</p>
+        <p>+91 9137974979</p>
       </div>
       <div className="frm-detail">
         <p className="frm-detail-para address">
@@ -28,7 +28,7 @@ const FormDetails = () => {
       </div>
       <div className="frm-contact">
         <img src={TelePhoneIcon} alt="#" />
-        <p className="frm-contact-para">+91 9137974083</p>
+        <p className="frm-contact-para">+91 9137974979</p>
       </div>
     </div>
   );

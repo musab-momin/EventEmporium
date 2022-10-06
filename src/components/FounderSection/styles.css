@@ -6,7 +6,7 @@
 .golden-clr{
     position: relative;
     width: 90%;
-    min-height: 600px;
+    min-height: 620px;
     background: var(--primary-gold);
 }
 
@@ -63,8 +63,9 @@
 
 .founder-title{
     font-size: clamp(1.5rem, 1rem + 6vw, 6rem);
-    margin-left: .5em;
+    margin-left: .3em;
     font-family: var(--ff-vibes);
+    border: 2px solid #fff;
 }
 .founder-title > span{
     font-size: clamp(16px, 30px, 40px);
@@ -85,6 +86,7 @@
     }
     .founder-title{
         font-size: clamp(1.5rem, 1rem + 3vw, 6rem);
+        margin-top: 0;
     }
     
     .founder-title > span{

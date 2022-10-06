@@ -43,6 +43,9 @@ const Footer = () => {
             <a href="https://www.instagram.com/eventemporium.09/" target="_blank" rel="noopener noreferrer external">
               <img src={InstagramIcon} alt='#' className='social-icon'/>
             </a>
+            <a className='ig-handle' href="https://www.instagram.com/eventemporium.09/" target="_blank" rel="noopener noreferrer external">
+              @eventemporium.09
+            </a>
           </div>
         </div>
       </div>

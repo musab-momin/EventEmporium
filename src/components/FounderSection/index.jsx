@@ -30,7 +30,7 @@ const FounderSection = () => {
             We bring a fresh, unique approach to the event management industry.
             Regardless of size scope, we treat your event like a business with
             clear strategic goals and comprehensive plane to ensure your event
-            is delivered on time and on a budget. We at the Event Emporium learn
+            is delivered on time and on a budget. We at Event Emporium learn
             about your business, focus on your challenges and plan events to
             support your goal.
           </p>

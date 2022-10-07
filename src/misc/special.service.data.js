@@ -20,7 +20,7 @@ export const SpecialServiceData = [
     id: "ss102",
     name: "Special Entries",
     description:
-      "We offer unique wedding entry for bride and groom, designed and styled in a way to ensure that you enjoy the most important occasion of your life in the best possible way. Your dreams are our inspiration behind crafting a miraculous memorable day for you.",
+      "We offer unique wedding entry for bride and groom, designed and styled in a way to ensure that you enjoy the most important occasion of your life in the best possible way.",
     imgWeb: SpecialEntriesWeb,
     imgNorm: SpecialEntries,
   },
